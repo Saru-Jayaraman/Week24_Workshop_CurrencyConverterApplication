@@ -1,27 +1,29 @@
 package se.lexicon;
 
+import static se.lexicon.ValuesForExchangeRates.*;
+
 public class ExchangeRates {
-    public static double convertSekToUsd(double inputAmount) {
-        return inputAmount * 0.096;
+    public static double convertSekToUsd(Double inputAmount) {
+        return inputAmount * valueSekToUsd;
     }
 
-    public static double convertUsdToSek(double inputAmount) {
-        return inputAmount * 10.37;
+    public static double convertUsdToSek(Double inputAmount) {
+        return inputAmount * valueUsdToSek;
     }
 
-    public static double convertSekToEuro(double inputAmount) {
-        return inputAmount * 0.089;
+    public static double convertSekToEuro(Double inputAmount) {
+        return inputAmount * valueSekToEuro;
     }
 
-    public static double convertEuroToSek(double inputAmount) {
-        return inputAmount * 11.21;
+    public static double convertEuroToSek(Double inputAmount) {
+        return inputAmount * valueEuroToSek;
     }
 
-    public static double convertUsdToEuro(double inputAmount) {
-        return inputAmount * 0.93;
+    public static double convertUsdToEuro(Double inputAmount) {
+        return inputAmount * valueUsdToEuro;
     }
 
-    public static double convertEuroToUsd(double inputAmount) {
-        return inputAmount * 1.08;
+    public static double convertEuroToUsd(Double inputAmount) {
+        return inputAmount * valueEuroToUsd;
     }
 }
